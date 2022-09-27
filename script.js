@@ -35,6 +35,10 @@
          let changeText=second.value
          second.value=first.value
          first.value=changeText
+
+         let changeLanguage=secondvalue.value
+         secondvalue.value=firstvalue.value
+         firstvalue.value=changeLanguage
         })
 
         let speech=new SpeechSynthesisUtterance()
@@ -42,11 +46,11 @@
          speech.lang=firstvalue.value;
          speech.text=first.value
          window.speechSynthesis.speak(speech)
-         console.log(firstvalue.value)
         })
 
         speak1.addEventListener("click",function(){
          speech.lang=secondvalue.value;
          speech.text=second.value
          window.speechSynthesis.speak(speech)
+         console.log(speech)
         })
