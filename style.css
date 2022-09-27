@@ -62,9 +62,7 @@ button{
     font-family: inherit;
     font-weight: bold;
 }
-.fa-exchange{
-    display: none;
-}
+
 button:hover{
     background-color: #00f;
     color: #fff;

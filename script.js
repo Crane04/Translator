@@ -11,6 +11,9 @@
 
 
         btn.addEventListener("click",function(){
+         if(first.value===""){
+            second.value="Please, enter a text."
+         }
            let api=`https://api.mymemory.translated.net/get?q=${first.value}&langpair=${firstvalue.value}|${secondvalue.value}`
            second.setAttribute("placeholder","Translating...")
            fetch(api).then(res=>res.json())
